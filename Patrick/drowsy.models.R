@@ -21,6 +21,7 @@ GES2014.drivers.day$DRYOUNG <- factor(ifelse(GES2014.drivers.day$AGE_IM %in% 17:
 GES2014.drivers.day$SEASON <- factor(ifelse(GES2014.drivers.day$MONTH %in% c(12, 1, 2), 1,
                                      ifelse(GES2014.drivers.day$MONTH %in% 3:5, 2,
                                             ifelse(GES2014.drivers.day$MONTH %in% 6:8, 3, 4)  )))
+##Ultimately used SUMMER, we are now looking into better cutpoint
 GES2014.drivers.day$SUMMER <- factor(ifelse(GES2014.drivers.day$MONTH %in% 6:8, 1, 0))
 GES2014.drivers.day$WEEKEND <- factor(ifelse(GES2014.drivers.day$WKDY_IM %in% c(1, 7), 1, 0))
 
